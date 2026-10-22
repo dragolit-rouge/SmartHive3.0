@@ -1,0 +1,18 @@
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+
+class CustomTab(QWidget):
+    def __init__(self, btn = None, label = None, edit = None, table = None, parent=None):
+        super().__init__(parent)
+        self.btn = btn
+        self.label = label
+        self.edit = edit
+        self.table = table
+        self.init_ui()
+
+    def init_ui(self):
+        layout = QVBoxLayout(self)
+
+        if self.btn: layout.addWidget(self.btn)
+        if self.label: layout.addWidget(self.label)
+        if self.edit: layout.addWidget(self.edit)
+        if self.table: layout.addWidget(self.table)
