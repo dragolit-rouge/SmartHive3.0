@@ -29,34 +29,31 @@ class TableConfig(QWidget):
         conn = sqlite3.connect(self.db_name)
         conn.execute("PRAGMA foreign_keys = ON")
         cur = conn.cursor()
-        '''if self.table_name == "uley":
+        if self.table_name == "uley":
                 if resp is not None:
-                    
-                    cur.execute(f"SELECT {self.column_name} FROM uley WHERE id_paseka = '{resp}'")
+                    cur.execute("SELECT * FROM uley WHERE id_pasek = ?", (resp,))
+
                 else:
-                    
-                    cur.execute(f"SELECT {self.column_name} FROM uley")
+                    cur.execute("SELECT * FROM uley")
                     
             
         elif self.table_name == "sensor":
             if resp is not None:
-                query = f"""
+                query = """
                         SELECT target.* 
                         FROM sensor AS target
                         JOIN uley AS middle ON target.id_uley = middle.id
-                        WHERE middle.id_paseka = '{resp}'
+                        WHERE middle.id_pasek = ?
                     """
-                cur.execute(query)
+                cur.execute(query, (resp,))
             else:
                     
                 cur.execute(f"SELECT {self.column_name} FROM sensor")
                     
             
         else:
-            cur.execute(f"SELECT {self.column_name} FROM {self.table_name}")
-               ''' 
-
-        if resp is not None:
+            cur.execute("")
+            '''if resp is not None:
             query = """
                 SELECT target.* 
                 FROM sensor AS target
@@ -65,7 +62,7 @@ class TableConfig(QWidget):
             """
             cur.execute(query, (resp,))
         else:
-            cur.execute("SELECT * FROM sensor")
+            cur.execute("SELECT * FROM uley")'''
 
         #cur.execute(f"SELECT {self.column_name} FROM {self.table_name}")
         rows = cur.fetchall()

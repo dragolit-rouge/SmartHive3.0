@@ -5,6 +5,7 @@ from PySide6.QtWidgets import (
     QTableWidgetItem, QVBoxLayout, QWidget, QMessageBox, QPushButton
 )
 from tab_construct import TabConstruct
+from connect_variant import ConnectVariant
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -18,6 +19,7 @@ class MainWindow(QMainWindow):
             name_table = "name",
             key_column = "id"
         )
+        
 
         self.setCentralWidget(self.container)
 

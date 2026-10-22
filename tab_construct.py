@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QTabWidget, QMessageBox
 import sqlite3
-from table_config import TableConfig        # Ваш первый готовый скрипт (таблица)
-from connect_variant import ConnectVariant  # Ваш второй готовый скрипт (текст + кнопка)
+from table_config import TableConfig        # (таблица)
+from connect_variant import ConnectVariant  # (текст + кнопка)
 
 class TabConstruct(QTabWidget):
     def __init__(self, db_name, table_a, name_table, key_column, parent=None):
@@ -11,7 +11,7 @@ class TabConstruct(QTabWidget):
         self.key_column = key_column
         self.table_a = table_a
 
-        self.tab_connect = ConnectVariant(label_text="Введите ваш ключ:", btn_text="Подключиться")
+        self.tab_connect = ConnectVariant(label_text="Введите ваш ключ:", btn_text="Подключиться", picture = "C:\\Users\\DragoLit\\Downloads\\pasek.jpg")
         
         self.tab_database = TableConfig(db_name, column_name = "*", table_name="uley")
         self.tab_database2 = TableConfig(db_name, column_name = "name, rtime, date, units", table_name="sensor")
@@ -57,5 +57,5 @@ class TabConstruct(QTabWidget):
         self.tab_connect.status_label.setText(success_message) # Меняем пустой текст на нужный
         self.tab_connect.status_label.show()
 
-        self.tab_database.load_data(resp = resp)
+        self.tab_database.load_data(resp)
         self.tab_database2.load_data(resp = resp)
