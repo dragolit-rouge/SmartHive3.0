@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+from PySide6.QtWidgets import QWidget, QHBoxLayout, QLabel, QPushButton
 
 class CustomTab(QWidget):
     def __init__(self, btn = None, label = None, edit = None, table = None, parent=None):
@@ -10,7 +10,7 @@ class CustomTab(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        layout = QVBoxLayout(self)
+        layout = QHBoxLayout(self)
 
         if self.btn: layout.addWidget(self.btn)
         if self.label: layout.addWidget(self.label)

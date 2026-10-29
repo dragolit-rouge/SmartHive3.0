@@ -4,8 +4,8 @@ from PySide6.QtWidgets import (
     QApplication, QMainWindow, QTableWidget, QHBoxLayout, QLabel, QLineEdit,
     QTableWidgetItem, QVBoxLayout, QWidget, QMessageBox, QPushButton
 )
-from tab_construct import TabConstruct
-from connect_variant import ConnectVariant
+from QTset.tab_construct import TabConstruct
+from QTset.connect_variant import ConnectVariant
 
 class MainWindow(QMainWindow):
     def __init__(self):

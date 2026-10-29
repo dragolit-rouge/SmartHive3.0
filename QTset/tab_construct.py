@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QTabWidget, QMessageBox
 import sqlite3
-from table_config import TableConfig        # (таблица)
-from connect_variant import ConnectVariant  # (текст + кнопка)
+from QTset.table_config import TableConfig        # (таблица)
+from QTset.connect_variant import ConnectVariant  # (текст + кнопка)
 
 class TabConstruct(QTabWidget):
     def __init__(self, db_name, table_a, name_table, key_column, parent=None):
