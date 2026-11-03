@@ -1,0 +1,102 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Страница-1" id="Th5hrf7UE-NHICw73DzP">
+    <mxGraphModel dx="348" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Пасека" vertex="1">
+          <mxGeometry height="90" width="140" x="60" y="-770" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-2" parent="rJGHhZtaAAbGXpt4YNFw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id (int) (primary key (естественный - снилс пчеловода))" vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Улей" vertex="1">
+          <mxGeometry height="130" width="140" x="310" y="-790" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-6" parent="rJGHhZtaAAbGXpt4YNFw-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id(int) (foreign key от пасеки (суррогатный))" vertex="1">
+          <mxGeometry height="50" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-7" parent="rJGHhZtaAAbGXpt4YNFw-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="daterate (real) (как у самого быстрого датчика)" vertex="1">
+          <mxGeometry height="50" width="140" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-4" edge="1" parent="1" source="rJGHhZtaAAbGXpt4YNFw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="rJGHhZtaAAbGXpt4YNFw-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="-620" />
+              <mxPoint x="380" y="-620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Градиентный датчик температуры" vertex="1">
+          <mxGeometry height="150" width="140" x="360" y="-590" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-10" parent="rJGHhZtaAAbGXpt4YNFw-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id (int) (foreign key от улья (составной из улья))" vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-11" parent="rJGHhZtaAAbGXpt4YNFw-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="daterate (real)" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-12" parent="rJGHhZtaAAbGXpt4YNFw-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="units (str) (единицы измерения)" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-3" edge="1" parent="1" source="rJGHhZtaAAbGXpt4YNFw-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="rJGHhZtaAAbGXpt4YNFw-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="-620" />
+              <mxPoint x="380" y="-620" />
+            </Array>
+            <mxPoint x="380" y="-650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Датчик влажности и температуры" vertex="1">
+          <mxGeometry height="150" width="140" x="160" y="-590" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-14" parent="rJGHhZtaAAbGXpt4YNFw-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id (int) (foreign key от улья (составной из улья))" vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-15" parent="rJGHhZtaAAbGXpt4YNFw-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="daterate (real)" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-16" parent="rJGHhZtaAAbGXpt4YNFw-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="units (str) (единицы измерения)" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Микрофон" vertex="1">
+          <mxGeometry height="150" width="140" x="550" y="-590" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-18" parent="rJGHhZtaAAbGXpt4YNFw-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id(int) (foreign key от улья (составной из улья))" vertex="1">
+          <mxGeometry height="60" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-19" parent="rJGHhZtaAAbGXpt4YNFw-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="daterate (real)" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rJGHhZtaAAbGXpt4YNFw-20" parent="rJGHhZtaAAbGXpt4YNFw-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="units (str) (единицы измерения)" vertex="1">
+          <mxGeometry height="30" width="140" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-1" edge="1" parent="1" source="rJGHhZtaAAbGXpt4YNFw-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.009;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;endSize=14;startArrow=diamondThin;startFill=1;startSize=20;" target="rJGHhZtaAAbGXpt4YNFw-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-5" edge="1" parent="1" source="rJGHhZtaAAbGXpt4YNFw-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.515;entryY=0.972;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="rJGHhZtaAAbGXpt4YNFw-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="-620" />
+              <mxPoint x="380" y="-620" />
+              <mxPoint x="380" y="-661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-7" edge="1" parent="1" source="smdSswv_Xdt5ZHQFXUEg-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.726;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;startArrow=none;startFill=0;startSize=20;endSize=20;" target="rJGHhZtaAAbGXpt4YNFw-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ESP" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="-755" as="geometry" />
+        </mxCell>
+        <mxCell id="7mQ9sxPzpVK2OQmmEM50-2" edge="1" parent="1" source="7mQ9sxPzpVK2OQmmEM50-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" target="smdSswv_Xdt5ZHQFXUEg-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7mQ9sxPzpVK2OQmmEM50-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Тут&amp;nbsp; возникает вопрос о необходимости ESP в каждом улье - с одной стороны это сделает систему более автономной, а с другой повлияет на экономическую сторону проекта" vertex="1">
+          <mxGeometry height="170" width="210" x="750" y="-810" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

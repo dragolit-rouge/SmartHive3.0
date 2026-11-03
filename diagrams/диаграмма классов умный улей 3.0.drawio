@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
   <diagram name="Страница-1" id="Th5hrf7UE-NHICw73DzP">
-    <mxGraphModel dx="348" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1028" dy="1534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -84,7 +84,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="smdSswv_Xdt5ZHQFXUEg-7" edge="1" parent="1" source="smdSswv_Xdt5ZHQFXUEg-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.726;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;startArrow=none;startFill=0;startSize=20;endSize=20;" target="rJGHhZtaAAbGXpt4YNFw-6" value="">
+        <mxCell id="smdSswv_Xdt5ZHQFXUEg-7" edge="1" parent="1" source="smdSswv_Xdt5ZHQFXUEg-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.726;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=none;startFill=0;startSize=20;endSize=20;" target="rJGHhZtaAAbGXpt4YNFw-6" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="smdSswv_Xdt5ZHQFXUEg-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ESP" vertex="1">
